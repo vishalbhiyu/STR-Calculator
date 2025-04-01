@@ -8,11 +8,15 @@ RSpec.describe StringCalculator do
           expect(StringCalculator.add('')).to eq(0)
         end
 
-        
+
         it 'returns the number for single number input' do
             expect(StringCalculator.add('1')).to eq(1)
             expect(StringCalculator.add('5')).to eq(5)
           end
 
 
+        it 'returns sum for two numbers' do
+            expect(StringCalculator.add('1,2')).to eq(3)
+            expect(StringCalculator.add('10,20')).to eq(30)
+          end
 end
