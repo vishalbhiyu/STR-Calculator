@@ -19,4 +19,10 @@ RSpec.describe StringCalculator do
             expect(StringCalculator.add('1,2')).to eq(3)
             expect(StringCalculator.add('10,20')).to eq(30)
           end
+
+
+        it 'returns sum for multiple numbers' do
+            expect(StringCalculator.add('1,2,3')).to eq(6)
+            expect(StringCalculator.add('1,2,3,4,5')).to eq(15)
+          end
 end
